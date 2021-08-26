@@ -36,11 +36,27 @@ footer {
 
 main {
     display: grid;
-    grid-template-columns: 150px auto 150px 35px 1fr;
-    grid-template-rows: min-content;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
 }
 
-section {
-    display: contents;
+
+.calcdiv {
+    display: grid;
+    grid-template-columns: 150px 50px 150px 35px ;
+    grid-template-rows: min-content;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.calcdiv p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.calcdiv input {
+    max-height: 20px;
+}
+.calcdiv button {
+    max-height: 20px;
 }

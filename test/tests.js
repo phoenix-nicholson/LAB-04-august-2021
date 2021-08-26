@@ -1,5 +1,8 @@
 // IMPORT MODULES under test here:
-import { add } from '../calculator.js'
+import { add } from '../calculator.js';
+import { sub } from '../calculator.js';
+import { multiply } from '../calculator.js';
+import { div } from '../calculator.js';
 
 const test = QUnit.test;
 
@@ -15,9 +18,49 @@ test('add function', (expect) => {
     //Act
     const result = add(number1, number2); 
     // Call the function you're testing and set the result to a const
-    const actual = 13; // use your function here
+    // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(result, expected);
 });
+
+
+
+test('sub function', (expect) =>{
+
+    const number1 = 20;
+    const number2 = 10;
+
+    const expected = 10;
+
+    const result = sub(number1, number2);
+
+    
+
+    expect.equal(result, expected);
+});
+
+test('multiply function', (expect) => {
+
+    const number1 = 10;
+    const number2 = 5;
+
+    const expected = 50;
+
+    const result = multiply(number1, number2);
+
+    expect.equal(result, expected);
+});
+
+test('div function', (expect) => {
+
+    const number1 = 10;
+    const number2 = 5;
+
+    const expected = 2;
+
+    const result = div(number1, number2);
+
+    expect.equal(result, expected);
+})

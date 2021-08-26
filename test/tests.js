@@ -63,4 +63,4 @@ test('div function', (expect) => {
     const result = div(number1, number2);
 
     expect.equal(result, expected);
-})
+});
